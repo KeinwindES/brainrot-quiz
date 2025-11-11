@@ -25,7 +25,7 @@ const question5answer = question5button1.innerText + question5button2.innerText 
     if (question1Input?.value.trim().toLowerCase() === '3') {
       score++;
     }
-    if (question2Input?.value.trim().toLowerCase() === 'mikal') {
+    if (question2currentlypicked === 'mikal') {
       score++;
     }
     if (question3Input?.value.trim() === '69') {
