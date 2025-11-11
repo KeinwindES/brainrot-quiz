@@ -13,6 +13,13 @@ if (submitButton) {
     const question6Input = document.getElementById('question6Input');
     const question7Input = document.getElementById('question7Input');
 
+const question5button1 = document.getElementById("button1")
+const question5button2 = document.getElementById("button2")
+const question5button3 = document.getElementById("button3")
+const question5button4 = document.getElementById("button4")
+const question5answer = question5button1.innerText + question5button2.innerText + question5button3.innerText + question5button4.innerText
+
+
     let score = 0;
 
     // checks values
@@ -31,7 +38,7 @@ if (submitButton) {
     if (question4Input?.value.trim().toLowerCase() === 'khevin511') {
       score++;
     }
-    if (question5Input?.value.trim().toLowerCase() === 'gyat') {
+    if (question5answer?.trim() === 'GYAT') {
       score++;
     }
     if (question6Input?.value.trim().toLowerCase() === 'skibidi toilet') {
