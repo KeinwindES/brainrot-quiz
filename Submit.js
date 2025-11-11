@@ -32,7 +32,7 @@ const question5answer = question5button1.innerText + question5button2.innerText 
       score++;
     }
     if (question3Input?.value.trim() === '6 7') {
-      score -= 69;
+      score--;
     }
     if (question4Input?.value.trim().toLowerCase() === 'khevin511') {
       score++;
