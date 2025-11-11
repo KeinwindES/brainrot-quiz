@@ -9,7 +9,6 @@ if (submitButton) {
     const question2Input = document.getElementById('question2Input');
     const question3Input = document.getElementById('question3Input');
     const question4Input = document.getElementById('question4Input');
-    const question5Input = document.getElementById('question5Input');
     const question6Input = document.getElementById('question6Input');
     const question7Input = document.getElementById('question7Input');
 
