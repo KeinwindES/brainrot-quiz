@@ -43,10 +43,18 @@ if (submitButton) {
     if (question6Input?.value.trim().toLowerCase() === "skibidi toilet") {
       score++;
     }
-    if (question7Input?.value.trim() === "b") {
+    if (question7Input?.checked) {
       score++;
     }
+    [...document.querySelectorAll(".question7wrong")].forEach(e =>{
+      if (e ?.checked) {
+        score--;
+      }
 
-    alert(`Your score is: ${score}/7`);
+    })
+document.getElementById("scoredisplay").innerText = `${score}/7`;
+
+    
   });
 }
+ 

@@ -11,88 +11,118 @@
         <div id="quiz-container" class="quiz-container">
             <h2>question 1</h2>
             <p>who is the top G?</p>
-            <input type="range" name="question1" id="question1Input" />
-            min="1" max="3" value="0" />
+            <input
+                type="range"
+                name="question1"
+                id="question1Input"
+                min="1"
+                max="3"
+                value="0"
+            />
             <label id="question1selectanswer" for="question1Input"
                 >bombardiro crocodilo</label
             >
 
-            <br /><br />
+        <br /><br />
 
-            <h2>question 2</h2>
-            <p>who has the best gYat?</p>
-            <div id="diceContainer">
-                <button id="rollDiceButton">pick a gyat</button>
-                <p id="diceResult">Click the button to pick a gyat</p>
-            </div>
+        <h2>question 2</h2>
+        <p>who has the best gYat?</p>
+        <div id="diceContainer">
+            <button id="rollDiceButton">pick a gyat</button>
+            <p id="diceResult">Click the button to pick a gyat</p>
+        </div>
 
-            <br /><br />
+        <br /><br />
 
-            <h2>question 3</h2>
-            <p>best number</p>
-            <select id="question3Input">
-                <option value="">-- pick a number --</option>
-                <option value="69">69</option>
-                <option value="420">420</option>
-                <option value="6 7">6 7</option>
+        <h2>question 3</h2>
+        <p>best number</p>
+        <select id="question3Input">
+            <option value="">-- pick a number --</option>
+            <option value="69">69</option>
+            <option value="420">420</option>
+            <option value="6 7">6 7</option>
+        </select>
+
+        <br /><br />
+
+        <h2>Question 4</h2>
+        <p>who is sigmA at subway surfers?</p>
+        <input type="text" id="question4Input" />
+        <p id="hint">hint: nr1 in subway surfer at speedrun.com</p>
+
+        <br /><br />
+
+        <h2>Question 5</h2>
+        <p>read all the capiTal letters</p>
+        <button id="button1">A</button>
+        <button id="button2">A</button>
+        <button id="button3">A</button>
+        <button id="button4">A</button>
+        <p id="hint">hint: look for capital letter in previus questions</p>
+
+        <br /><br />
+
+        <h2>Question 6</h2>
+        <p>sigma sigma on the wall, who is the most skibidi of them all?</p>
+        <input type="text" id="question6Input" />
+
+        <br /><br />
+
+        <h2>Question 7</h2>
+        <p style="font-size: 2em">what species are you?</p>
+        <!--  checkbox -->
+        <label for="a">gay sapien</label>
+        <input class="question7wrong" type="checkbox" id="a" name="species" value="a" />
+        <label for="b">homo sapian</label>
+        <input class="question7wrong" type="checkbox" id="b" name="species" value="b" />
+        <label for="c">lgbtq+sapian</label>
+        <input id="question7Input" type="checkbox" id="c" name="species" value="c" />
+        <label for="d">straight sapian</label>
+        <input class="question7wrong" type="checkbox" id="d" name="species" value="d" />
+
+        <br /><br />
+
+        
+        <h2> Question 8</h2>
+        <div id="question8div">
+            <p style="color: red;"> "ENTER CREDIT CARD INFORMATION TO UNLOCK QUESTION"</p>
+            <select name="" id="cardpickerid">
+                <option style="display:none" value="" disabled selected></option>
+                <option value="1">MasterCard</option>
+                <option value="1">Visa</option>
+                <option value="1">PayPal</option>
+                <option value="1">revolut</option>
+                <option value="1">Vipps</option>
             </select>
-
-            <br /><br />
-
-            <h2>Question 4</h2>
-            <p>who is sigmA at subway surfers?</p>
-            <input type="text" id="question4Input" />
-            <p id="hint">hint: nr1 in subway surfer at speedrun.com</p>
-
-            <br /><br />
-
-            <h2>Question 5</h2>
-            <p>read all the capiTal letters</p>
-            <button id="button1">A</button>
-            <button id="button2">A</button>
-            <button id="button3">A</button>
-            <button id="button4">A</button>
-            <p id="hint">hint: look for capital letter in previus questions</p>
-
-            <br /><br />
-
-            <h2>Question 6</h2>
-            <p>sigma sigma on the wall, who is the most skibidi of them all?</p>
-            <input type="text" id="question6Input" />
-
-            <br /><br />
-
-            <h2>Question 7</h2>
-            <p style="font-size: 2em">what species are you?</p>
-            <!--  checkbox -->
-            <label for="a">gay sapien</label>
-            <input type="checkbox" id="a" name="species" value="a" />
-            <label for="b">homo sapian</label>
-            <input type="checkbox" id="b" name="species" value="b" />
-            <label for="c">lgbtq+sapian</label>
-            <input type="checkbox" id="c" name="species" value="c" />
-            <label for="d">straight sapian</label>
-            <input type="checkbox" id="d" name="species" value="d" />
-
-            <br /><br />
-
-            <img src="goku supreme.jpg" alt="" />
-
-            <br /><br /><br />
-
-            <button type="submit" id="submitButton">Submit</button>
+            
+            <input id="question8cardnumber" oninput='this.value=this.value.replace(/\D/g, "")' style="margin-right: 1em;" type="text" placeholder="cardnumber" maxlength="16"> 
+            <input id="question8cvv" oninput='this.value=this.value.replace(/\D/g, "")' style="margin-right: 1em; margin-top: 1em;" type="text" placeholder="cvv" maxlength="3">
+            <input id= "expirationpicker" type="text" placeholder="expiration date" maxlength="5">
+            <input id="question8name" type="text" placeholder="card holder/name" max length="12"> 
+            <button style="margin-top: 1em;margin-left: 1em;" id="cardihnfoscheck"> pay </button>  <p style="display:none; color: red;" id="missinginfo" >missing information</p>
         </div>
+        
 
-        <div>
-            <p style="font-size: x-large">Made by: <br /></p>
-            <p>Keinwind <br /></p>
-            <p>Kryddermannen</p>
-        </div>
 
-        <script src="RollDice.js"></script>
-        <script src="Submit.js"></script>
-        <script src="ButtonClick.js"></script>
-        <script src="sliders.js"></script>
-        <script src="Achivment.js"></script>
-    </body>
+        <br /><br /><br />
+
+        <button type="submit" id="submitButton">Submit</button>
+        <p id="scoredisplay">0/7</p>
+
+    </div>
+
+        <div> 
+          <p style="font-size: x-large;"> Made by: <br /></p>
+           <p> Keinwind <br /></p>
+           <p> Kryddermannen </p>
+         </div>
+
+    <script src="RollDice.js"></script>
+    <script src="Submit.js"></script>
+    <script src="ButtonClick.js"></script>
+    <script src="sliders.js"></script>
+    <script src="Achivment.js"></script>
+    <script src="inputhandler.js"></script>
+</body>
+
 </html>
