@@ -55,7 +55,9 @@ if (submitButton) {
       }
 
     })
+document.getElementById("scoredisplay").innerText = `${score}/7`;
 
-    alert(`Your score is: ${score}/7`);
+    
   });
 }
+ 
