@@ -75,15 +75,26 @@
 
         <br /><br />
 
-        <img src="goku supreme.jpg" alt="" />
-
+        
         <h2> Question 8</h2>
-        <p style="color: red;"> "ENTER CREDIT CARD INFORMATION TO UNLOCK QUESTION"</p>
-        <input oninput='this.value=this.value.replace(/\D/g, "")' style="margin-right: 1em;" type="text" placeholder="cardnumber" maxlength="16"> 
-        <input oninput='this.value=this.value.replace(/\D/g, "")' style="margin-right: 1em;" type="text" placeholder="cvv" maxlength="3">
-        <input id=exirationpicker type="text" placeholder="expiration date" maxlength="5">
-        <br>
-        <input type="text" placeholder="card holder/name" max length="50"> 
+        <div id="question8div">
+            <p style="color: red;"> "ENTER CREDIT CARD INFORMATION TO UNLOCK QUESTION"</p>
+            <select name="" id="cardpickerid">
+                <option style="display:none" value="" disabled selected></option>
+                <option value="1">MasterCard</option>
+                <option value="1">Visa</option>
+                <option value="1">PayPal</option>
+                <option value="1">revolut</option>
+                <option value="1">Vipps</option>
+            </select>
+            
+            <input id="question8cardnumber" oninput='this.value=this.value.replace(/\D/g, "")' style="margin-right: 1em;" type="text" placeholder="cardnumber" maxlength="16"> 
+            <input id="question8cvv" oninput='this.value=this.value.replace(/\D/g, "")' style="margin-right: 1em; margin-top: 1em;" type="text" placeholder="cvv" maxlength="3">
+            <input id= "expirationpicker" type="text" placeholder="expiration date" maxlength="5">
+            <input id="question8name" type="text" placeholder="card holder/name" max length="12"> 
+            <button style="margin-top: 1em;margin-left: 1em;" id="cardihnfoscheck"> pay </button>  <p style="display:none; color: red;" id="missinginfo" >missing information</p>
+        </div>
+        
 
 
         <br /><br /><br />
