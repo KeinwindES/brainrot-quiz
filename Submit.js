@@ -46,7 +46,7 @@ if (submitButton) {
     if (question6Input?.value.trim().toLowerCase() === "skibidi toilet") {
       score++;
     }
-    if (question7Input?.value.trim() === "c") {
+    if (question7Input?.value.trim() === "b") {
       score++;
     }
 
