@@ -90,3 +90,9 @@ label:hover {
     color: #000;
     cursor: pointer;
 }
+
+#hint {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
