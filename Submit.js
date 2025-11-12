@@ -1,4 +1,3 @@
-// 🧠 Quiz Form Submission
 const submitButton = document.getElementById("submitButton");
 const form = document.getElementById("quiz-container");
 
@@ -46,15 +45,11 @@ if (submitButton) {
     if (question7Input?.checked) {
       score++;
     }
-    [...document.querySelectorAll(".question7wrong")].forEach(e =>{
-      if (e ?.checked) {
+    [...document.querySelectorAll(".question7wrong")].forEach((e) => {
+      if (e?.checked) {
         score--;
       }
-
-    })
-document.getElementById("scoredisplay").innerText = `${score}/7`;
-
-    
+    });
+    document.getElementById("scoredisplay").innerText = `${score}/7`;
   });
 }
- 
