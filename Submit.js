@@ -31,11 +31,8 @@ if (submitButton) {
     if (question2currentlypicked === "mikal") {
       score++;
     }
-    if (question3Input?.value.trim() === "69") {
+    if (question3Input?.value.trim() === "6 7") {
       score++;
-    }
-    if (question3Input?.value.trim() === '6 7') {
-      score--;
     }
     if (question4Input?.value.trim().toLowerCase() === "khevin511") {
       score++;
