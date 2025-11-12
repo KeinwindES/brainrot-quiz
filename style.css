@@ -7,22 +7,24 @@
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #ceb8a6;
-
 }
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     color: #333;
     font-size: 2em;
 }
-p{
-font-size: 20px;
+p {
+    font-size: 20px;
 }
 label {
     display: block;
     margin: 10px 0;
     font-size: 18px;
 }
-input[type="radio"], input[type="range"], select {
+input[type="radio"],
+input[type="range"],
+select {
     margin-top: 5px;
 }
 #diceContainer {
@@ -47,13 +49,13 @@ img {
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: url('Background.jpg.png');
+    background-image: url("Background.jpg.png");
     background-size: 50%;
     background-attachment: fixed;
     line-height: 1.6;
 }
 button {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -62,7 +64,7 @@ button {
 }
 button:hover {
     background-color: #45a049;
-} 
+}
 .result {
     text-align: center;
     font-size: 22px;
@@ -76,7 +78,7 @@ select {
     width: 100%;
     padding: 5px;
     font-size: 16px;
-}   
+}
 input[type="radio"] {
     transform: scale(1.2);
     margin-right: 10px;
