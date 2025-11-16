@@ -1,4 +1,4 @@
-const input = document.getElementById("exirationpicker");
+const input = document.getElementById("expirationpicker");
 
 input.addEventListener("input", (e) => {
   let value = e.target.value.replace(/\D/g, ""); // remove all non-digits
