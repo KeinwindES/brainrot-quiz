@@ -53,7 +53,7 @@ if (submitButton) {
     });
     if (question8?.value === "Sigma") {
       score++;
-    }
+    }gjztztzu
 
     document.getElementById("scoredisplay").innerText = `${score}/9`;
     if (score === 9)
