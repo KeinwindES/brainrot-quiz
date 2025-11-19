@@ -22,7 +22,7 @@ document.getElementById("cardihnfoscheck").addEventListener("click", (e) => {
     document.getElementById("missinginfo").style.display = "block";
   } else {
     document.getElementById("question8div").innerHTML =
-      '<img src="goku supreme.jpg" alt=""/>';
+      '<img src="Img/goku supreme.jpg" alt=""/>';
   }
 });
 function noerror() {
