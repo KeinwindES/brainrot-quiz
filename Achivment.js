@@ -1,2 +1,0 @@
-const Locked = [];
-const UnLocked = [];

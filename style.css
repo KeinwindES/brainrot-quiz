@@ -49,7 +49,7 @@ img {
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: url("Background.jpg.png");
+    background-image: url("/Img/Background.jpg.png");
     background-size: 50%;
     background-attachment: fixed;
     line-height: 1.6;
