@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll(
   "#button1, #button2, #button3, #button4",
 );
-
+let hasAnsweredQuestion8 = false;
 buttons.forEach((button, index) => {
   let letter = "A";
   button.addEventListener("click", () => {
@@ -23,6 +23,7 @@ document.getElementById("cardihnfoscheck").addEventListener("click", (e) => {
   } else {
     document.getElementById("question8div").innerHTML =
       '<img src="Img/goku supreme.jpg" alt=""/>';
+    hasAnsweredQuestion8 = true;
   }
 });
 function noerror() {
